@@ -1,0 +1,27 @@
+import discord
+import asyncio
+import random
+
+TOKEN = 'MTMzNjI0NTQwMTY4MjE4NjI3MA.GHoDJb.wGjakt0Xkl2ZHiIU_LpaRbcTtGyIbK7goiJdNI'
+CHANNEL_ID = 997096463626674228
+
+jokes = [
+    "Чому програмісти не люблять природу? Бо там багато багів.",
+    "Що каже Python, коли зустрічає Java? 'Джаст плейн ООП!'",
+    "Як звати програміста-овоча? Root."
+]
+
+class JokeBot(discord.Client):
+    async def on_ready(self):
+        print(f'Бот увійшов як {self.user}')
+        channel = self.get_channel(997096463626674228)
+        if channel:
+            while True:
+                joke = random.choice(jokes)
+                await channel.send(joke)
+                await asyncio.sleep(3600)
+
+ntents = discord.Intents.default()
+bot = JokeBot(intents=ntents)
+bot.run('MTMzNjI0NTQwMTY4MjE4NjI3MA.GHoDJb.wGjakt0Xkl2ZHiIU_LpaRbcTtGyIbK7goiJdNI')
+            

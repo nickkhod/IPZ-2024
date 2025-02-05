@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "20ab7b3d-9c21-44f3-b032-352140ccbd5a",
+		"name": "Photography",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39784277"
+	},
+	"item": [
+		{
+			"name": "Pixabay video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pixabay.com/api/videos/?key=47112390-34b6b8c8621bd03ac89397f3f",
+					"protocol": "https",
+					"host": [
+						"pixabay",
+						"com"
+					],
+					"path": [
+						"api",
+						"videos",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "47112390-34b6b8c8621bd03ac89397f3f",
+							"description": "https://pixabay.com/api/"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pixabay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pixabay.com/api/?key=47112390-34b6b8c8621bd03ac89397f3f",
+					"protocol": "https",
+					"host": [
+						"pixabay",
+						"com"
+					],
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "47112390-34b6b8c8621bd03ac89397f3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallhaven",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wallhaven.cc/api/v1/settings?apikey=v3TfKv9Q8V1VlBFgDc24BPyCxYMNO0In",
+					"protocol": "https",
+					"host": [
+						"wallhaven",
+						"cc"
+					],
+					"path": [
+						"api",
+						"v1",
+						"settings"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "v3TfKv9Q8V1VlBFgDc24BPyCxYMNO0In"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallhaven collections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://wallhaven.cc/api/v1/collections?apikey=GLLxJRWinH1xcRz3gqm847V7rJ80zTV7",
+					"protocol": "https",
+					"host": [
+						"wallhaven",
+						"cc"
+					],
+					"path": [
+						"api",
+						"v1",
+						"collections"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "GLLxJRWinH1xcRz3gqm847V7rJ80zTV7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

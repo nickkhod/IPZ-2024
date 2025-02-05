@@ -1,0 +1,87 @@
+# n = 20  #В цілому можна змінити n 
+# for a in range(1, n+1):
+#     for b in range(a, n+1):
+#         c = (a**2 + b**2) ** 0.5
+#         if c.is_integer() and c <= n:
+#             print(a, b, int(c))               
+            
+            # Перша задача
+# Номери задач під самою задачкою!!!
+
+# n = 5  
+# pascal = [[1] * (i+1) for i in range(n)]
+# for i in range(2, n):
+#     for j in range(1, i):
+#         pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j]
+# for row in pascal:
+#     print(row)
+
+# Друга задача
+
+# n = 1000
+# sieve = [True] * (n+1)
+# sieve[0] = sieve[1] = False
+# for i in range(2, int(n**0.5)+1):
+#     if sieve[i]:
+#         for j in range(i*i, n+1, i):
+#             sieve[j] = False
+# primes = [i for i in range(n+1) if sieve[i]]
+# print(primes)
+
+# третя задача
+
+# def prime_factors(n):
+#     i = 2
+#     factors = []
+#     while i * i <= n:
+#         while n % i == 0:
+#             factors.append(i)
+#             n //= i
+#         i += 1
+#     if n > 1:
+#         factors.append(n)
+#     return factors
+
+# print(prime_factors(250))
+
+# четверта задача
+
+# def is_palindrome(n):
+#     return str(n) == str(n)[::-1]
+
+# for i in range(1, 100):
+#     if is_palindrome(i) and is_palindrome(i**2):
+#         print(i)
+
+# П'ята задача
+
+# import inflect
+# p = inflect.engine()
+# n = 123  
+# print(p.number_to_words(n))
+
+# шоста
+
+# n = 10  
+# for i in range(n, 2*n):
+#     if sieve[i] and sieve[i+2]:
+#         print(i, i+2)
+
+# Сьома
+
+# import textwrap
+# text = "Це приклад тексту, який потрібно відформатувати."
+# n = 60  # Можна змінити ширину
+# print("\n\n".join(textwrap.fill(para, n) for para in text.split("\n\n")))
+
+# восьма
+
+
+
+# cities = [(1, 2), (3, 5), (7, 8)]  # Можна змінити координати
+# x_sorted = sorted(x for x, y in cities)
+# y_sorted = sorted(y for x, y in cities)
+# capital = (x_sorted[len(x_sorted)//2], y_sorted[len(y_sorted)//2])
+# print(capital)
+
+# 11

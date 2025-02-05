@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "7730c772-f00a-450c-bef1-46a9895f0215",
+		"name": "Semenova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39720989"
+	},
+	"item": [
+		{
+			"name": "GoogleFonts_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyA6IcQ1jWjb51U6PXaFj-tC6svZFDTQmsY&family=Abel",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"webfonts",
+						"v1",
+						"webfonts"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyA6IcQ1jWjb51U6PXaFj-tC6svZFDTQmsY"
+						},
+						{
+							"key": "family",
+							"value": "Abel"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETPing_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.getping.info/QvpXmD/hello?QvpXmD=hello",
+					"protocol": "https",
+					"host": [
+						"api",
+						"getping",
+						"info"
+					],
+					"path": [
+						"QvpXmD",
+						"hello"
+					],
+					"query": [
+						{
+							"key": "QvpXmD",
+							"value": "hello"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hunter_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hunter.io/v2/domain-search?domain=stripe.com&api_key=cafad068932850b62998fb5f4e0dc22de589e5f6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hunter",
+						"io"
+					],
+					"path": [
+						"v2",
+						"domain-search"
+					],
+					"query": [
+						{
+							"key": "domain",
+							"value": "stripe.com"
+						},
+						{
+							"key": "api_key",
+							"value": "cafad068932850b62998fb5f4e0dc22de589e5f6"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "macaddress_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.macaddress.io/v1?apiKey=at_63KyKrBKWtJ6mu9driIaFH4fp1KKb&output=json&search=44:38:39:ff:ef:57",
+					"protocol": "https",
+					"host": [
+						"api",
+						"macaddress",
+						"io"
+					],
+					"path": [
+						"v1"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "at_63KyKrBKWtJ6mu9driIaFH4fp1KKb"
+						},
+						{
+							"key": "output",
+							"value": "json"
+						},
+						{
+							"key": "search",
+							"value": "44:38:39:ff:ef:57"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Proxykingdom_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.proxykingdom.com/proxy?token=1PMZ7ZD5NT0DDw&protocol=Http",
+					"protocol": "https",
+					"host": [
+						"api",
+						"proxykingdom",
+						"com"
+					],
+					"path": [
+						"proxy"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1PMZ7ZD5NT0DDw"
+						},
+						{
+							"key": "protocol",
+							"value": "Http"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "webscraping_request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.webscraping.ai/html?api_key=c4b6c9f2-37e9-42a7-80ae-82c25ebd255c&url=https://example.com",
+					"protocol": "https",
+					"host": [
+						"api",
+						"webscraping",
+						"ai"
+					],
+					"path": [
+						"html"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "c4b6c9f2-37e9-42a7-80ae-82c25ebd255c"
+						},
+						{
+							"key": "url",
+							"value": "https://example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

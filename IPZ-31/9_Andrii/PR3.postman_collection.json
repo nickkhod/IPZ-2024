@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "6ee4240c-d389-4635-ac64-af26a1d6c277",
+		"name": "PR3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40147195"
+	},
+	"item": [
+		{
+			"name": "holidays",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "UA",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2023",
+							"type": "text"
+						},
+						{
+							"key": "pretty",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://holidayapi.com/v1/holidays?country=UA&year=2023&pretty&key=8559c96f-ed2a-4a30-a664-3d751fb6801f",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"holidays"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "UA"
+						},
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "pretty",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -G -d country=\"UA\" -d year=\"2023\" -d pretty\n-d key=\"8559c96f-ed2a-4a30-a664-3d751fb6801f\" \"https://holidayapi.com/v1/holidays\""
+			},
+			"response": []
+		},
+		{
+			"name": "countries",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pretty",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://holidayapi.com/v1/countries?pretty&key=8559c96f-ed2a-4a30-a664-3d751fb6801f",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"countries"
+					],
+					"query": [
+						{
+							"key": "pretty",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -G -d pretty\n-d key=\"8559c96f-ed2a-4a30-a664-3d751fb6801f\" \"https://holidayapi.com/v1/countries\""
+			},
+			"response": []
+		},
+		{
+			"name": "languages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pretty",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://holidayapi.com/v1/languages?pretty&key=8559c96f-ed2a-4a30-a664-3d751fb6801f",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"languages"
+					],
+					"query": [
+						{
+							"key": "pretty",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -G -d pretty\n-d key=\"8559c96f-ed2a-4a30-a664-3d751fb6801f\" \"https://holidayapi.com/v1/languages\""
+			},
+			"response": []
+		},
+		{
+			"name": "workday",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "country",
+							"value": "UA",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2023-12-03",
+							"type": "text"
+						},
+						{
+							"key": "days",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "pretty",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://holidayapi.com/v1/workday?country=UA&start=2023-12-03&days=7&pretty&key=8559c96f-ed2a-4a30-a664-3d751fb6801f",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"workday"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "UA"
+						},
+						{
+							"key": "start",
+							"value": "2023-12-03"
+						},
+						{
+							"key": "days",
+							"value": "7"
+						},
+						{
+							"key": "pretty",
+							"value": ""
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl -G -d country=\"UA\" -d start=\"2023-12-03\" -d days=\"7\" -d pretty\n-d key=\"8559c96f-ed2a-4a30-a664-3d751fb6801f\" \"https://holidayapi.com/v1/workday\""
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://holidayapi.com/v1/holidays?country=UA&year=2023&pretty&key=8559c96f-ed2a-4a30-a664-3d751fb6801f",
+					"protocol": "https",
+					"host": [
+						"holidayapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"holidays"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "UA"
+						},
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "pretty",
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "8559c96f-ed2a-4a30-a664-3d751fb6801f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

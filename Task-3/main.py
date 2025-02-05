@@ -7,12 +7,15 @@ from datetime import datetime
 import pytz
 import threading
 from flask import Flask
+from dotenv import load_dotenv
 
-TOKEN = '7957207504:AAGEKxZrEcAI1iLgdKw6bvrLQ9rylYuqK_I'
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 API_URL = "https://api.alerts.in.ua/v1/alerts/active.json"
-API_TOKEN = "3b5106a1058f3c29227de73d95c1dcabc2488358ab2203"
+
+API_TOKEN = os.getenv('API_TOKEN')
 
 headers = {
     "Authorization": f"Bearer {API_TOKEN}",
@@ -116,9 +119,9 @@ def start_monitoring(message):
 
 
 if __name__ == "__main__":
-    
+    # Запускаємо bot.polling у фоновому потоці
     threading.Thread(target=lambda: bot.polling(non_stop=True), daemon=True).start()
 
-    
+    # Запуск Flask-сервера на вказаному порту
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)

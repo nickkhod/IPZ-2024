@@ -1,0 +1,21 @@
+import time
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://booking.uz.gov.ua/" 
+CHECK_INTERVAL = 300  
+
+def check_tickets():
+    response = requests.get(URL)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, "html.parser")
+        if "Квитки в наявності" in soup.text:  
+            return True
+    return False
+
+while True:
+    if check_tickets():
+        print("Квитки з'явилися в продажу! Перевірте: " + URL)
+        break  
+    time.sleep(CHECK_INTERVAL)
+

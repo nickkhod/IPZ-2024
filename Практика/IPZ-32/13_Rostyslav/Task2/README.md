@@ -29,3 +29,16 @@ The script then calls the `find_palindromic_squares()` function to get the list 
 The output will be a list of palindromic numbers within the specified range whose squares are also palindromic.
 
 ## Example Output
+
+[1, 2, 3, 11, 22]
+
+This output indicates that the numbers 1, 2, 3, 11, and 22 are palindromic, and their squares (1, 4, 9, 121, and 484, respectively) are also palindromic.
+
+## Limitations
+
+- The script currently searches for palindromic squares only within the range of 1 to 100.  You can modify the `range()` in the `find_palindromic_squares()` function to explore a different range.
+- The script only considers positive integers.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues.

@@ -1,11 +1,11 @@
+def process_string():
+    s = input("Введіть текст: ")
+    v = "аоуеиіАОУЕІИaeiouAEIOU"
+    c = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZбвгґджзклмнпрстфхцчшщБВГҐДЖЗКЛМНПРОТФХЦЧШЩ"
+    vowels = "".join(sorted([ch for ch in s if ch in v], reverse=True))
+    consonants = "".join(sorted([ch for ch in s if ch in c], reverse=True))
+    more_consonants = len(consonants) > 3
+    return (vowels, more_consonants, consonants)
 
-
-def process_string(s: str) -> tuple:
-    vowels = "aeiouAEIOU"
-    vowel_part = sorted([ch for ch in s if ch in vowels], reverse=True)
-    consonant_part = sorted([ch for ch in s if ch.isalpha() and ch not in vowels], reverse=True)
-    return ("".join(vowel_part), len(consonant_part) > 3, "".join(consonant_part))
-
-user_input = input("Введіть рядок: ")
-result = process_string(user_input)
+result = process_string()
 print(result)
